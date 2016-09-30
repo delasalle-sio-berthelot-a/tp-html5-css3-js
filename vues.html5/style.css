@@ -1,0 +1,313 @@
+/* ---------------------- Mise en forme de la structure g�n�rale --------------*/
+
+/* style de la division id="page"*/
+div#page{
+	/*largeur, centrage avec des marges auto, padding nul, bordure noire, alignement gauche*/
+	width: 800px;
+	margin: 0 auto;
+	padding:0;
+	border:#000 1px solid;
+	text-align:left;
+	
+	/* coins arrondis avec un rayon de 15 pixels */
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-o-border-radius:15px;
+	-ms-border-radius:15px;
+	-khtml-border-radius:15px;
+	border-radius:15px;
+	
+	/* fond avec un d�grad� de couleur (blanc en hant et gris l�ger en bas)*/
+	background: -moz-linear-gradient(top,rgb(255, 255, 255), rgb(210, 210, 210));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(210, 210, 210)));
+	background: linear-gradient(to bottom,rgb(255, 255, 255), rgb(225, 225, 225));
+}
+
+/*style de la balise <body> */
+body {
+	/* police, marges nulles et padding de 30 pixels en haut */
+	font:0.8em Verdana, Arial, Helvetica, sans-serif;
+	margin:0;
+	padding: 30px 0 0 0;
+	
+	/* fond avec un d�grad� de couleur (blanc en haut, gris en bas)*/
+	background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(210, 210, 210));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(210, 210, 210)));
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(225, 225, 225));
+}
+
+
+/* style de la page HTML */
+html {
+	/* la page doit occuper toute la hauteur du navigateur */
+	height: 100%;	
+}
+
+/* style de la division id="footer" */
+div#footer {
+	/* hauteur, padding, marge en haut, couleur d'arri�re-plan */
+	height: 36px;
+	padding: 0;
+	margin: 20px 0 0 0;
+	background-color: #00A3E4;
+	
+	/* coin arondis en bas uniquement */
+	-moz-border-radius: 0 0 15px 15px;
+	-webkit-border-radius: 0 0 15px 15px;
+	-o-border-radius: 0 0 15px 15px;
+	-ms-border-radius: 0 0 15px 15px;
+	-khtml-border-radius: 0 0 15px 15px;
+	border-radius: 0 0 15px 15px;
+}
+
+/*---------- Mise En forme des tableaux---------- */
+
+/* Styles des tableau */
+
+div#footer p {
+	/* hauteur, padding, marge en haut, couleur d'arri�re-plan */
+	width: 7px 0 0 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+/* ----- Mise en forme du menu horizontal ------ */
+
+/* style de la division id="header-menu" */
+div#content {
+	padding: 10px 30px 0 40px;
+	margin:0;
+}
+
+div#header-menu {
+	/* hauteur, padding, marge, couleur d'arrière-plan */
+	height: 36px;
+	padding:0;
+	margin:0;
+	background: #00A3E4;
+	
+	/* coins arrondis en haut uniquement */
+	-moz-border-radius: 15px 15px 0 0;
+	-webkit-border-radius: 15px 15px 0 0;
+	-o-border-radius: 15px 15px 0 0;
+	-ms-border-radius: 15px 15px 0 0;
+	-khtml-border-radius: 15px 15px 0 0;
+	border-radius: 15px 15px 0 0;
+}
+
+
+/*style de la liste <ul id="menu-horizontal">*/
+ul#menu-horizontal {
+	padding: 0;
+	margin: 0;
+	height: 36px;
+	list-style-type: none;
+}
+
+/* style des éléments <li> de la liste <ul id="menu-horizontal"> */
+ul#menu-horizontal li{
+	padding:0;
+	margin:0;
+	height:36px;
+	float: left;
+	text-align:center;
+}
+
+ul#menu-horizontal li a{
+	border-right: #fff 2px solid;
+	display: block;
+	font-weight: bold;
+	font-size: 1.2em;
+	width: 200px;
+	color: #fff;
+	line-height: 36px;
+	text-decoration: none;
+}
+
+
+/* modification de couleur au survol de la souris */
+ul#menu-horizontal li a:hover {
+	background: #0b4c8e;
+}
+
+/*ajout d'un coin arrondi (en haut et à gauche) au premier lien uniquement lors du survol de la souris*/
+ul#menu-horizontal li:first-child a:hover {
+	-moz-border-radius: 15px 0 0 0;
+	-webkit-border-radius: 15px 0 0 0;
+	-o-border-radius: 15px 0 0 0;
+	-ms-border-radius: 15px 0 0 0;
+	-khtml-border-radius: 15px 0 0 0;
+	border-radius: 15px 0 0 0;
+}
+
+/* ------- Positionnement des images --------*/
+
+/* style de la division id="header-logos" */
+div#header-logos {
+	padding: 10px 0 0 0;
+	margin : 0;
+}
+
+/*style de l'image id="logo-gauche" */
+img#logo-gauche {
+	padding : 0 40px 0 40px;
+	width: 200px;
+	height: 70px;
+}
+
+/*style de l'image id="logo-droite" */
+img#logo-droite {
+	padding : 0 40px 0 40px;
+	width: 400px;
+	height: 70px;
+}
+
+
+/* ---------- mise en forme des titres et paragraphes -------- */
+
+/*style des balises <h2> de la division <div id="content"> */
+div#content h2{
+	/* padding à gauche pour pouvoir y placer une image */
+	padding-left: 35px;
+
+
+
+/* taille et couleur de la police, et hauteur de ligne */
+	font-size :1.4em;
+	color: #0b4c8e;
+	line-height: 25px;
+	
+/* ajout d'une image à gauche */
+	background: url(../images-tp-1-1/puce.png) no-repeat left bottom;
+	
+	
+/* ajout d'une bordure au dessus et en dessous */
+	border-top: #0b4c8e 1px solid;
+	border-bottom: #0b4c8e 1px solid;
+
+
+}
+
+
+/* style des balises <h3> de la division <div id="content">*/
+div#content h3{
+	text-indent: 2em;
+	font-size: 1em;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+/* style des balises <p> de la division <div id="content"> */
+div#content p{
+	line-height : 1.2em;
+	text-align:justify;
+}
+
+div#content a{
+	color: #00a3e4;
+	font-weight: bold;
+}
+
+/*style des balises <a> de la division <div id="content"> lors du survol par la souris */
+div#content a:hover{
+	color: #0b4c8e;
+	font-weight: bold;
+}
+
+/* --------- Mise en forme du menu vertical ------- */
+
+/* style de la <div id="menu-vertical">*/
+div#menu-vertical {
+	/*padding en haut et en bas */
+	padding: 20px 0 20px 0;
+}
+
+/*transformation en boutons des liens hypertextes <a> avec l'attribut class="bouton-menu"*/
+div#menu-vertical a bouton-menu {
+	/* police, couleur et alignment du texte, style du lien */
+	font: 1.1em Arial, Heltevica, sans-serif;
+	color:#0b4c8e;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+
+
+/* ombre portée du texte du bouton */
+	text-shadow: 0 1px 0 #fff;
+	
+/* dimensions, margin, padding, type d'affichage, bordure */
+width: 300px;
+margin: 20px auto;
+padding: 5px;
+display: block;
+border: 1px solid rgba(0, 0, 0, 0.1);
+
+/* coins arrondis */
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-o-border-radius:7px;
+	-ms-border-radius:7px;
+	-khtml-border-radius:7px;
+	border-radius:7px;
+
+/* fond avec un dégradé de couleur (blanc en haut, gris en bas */
+	background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(220, 220, 220));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(220, 220, 220)));
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(220, 220, 220));
+
+	-moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+	box-shadow:2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* modification au surbal des liens hypertextes <a> avec l'attribut class="bouton-menu" */
+div#menu-vertical a.bouton-menu:hover {
+	background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(200, 200, 200));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(200, 200, 200)));
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
+}
+
+
+table {
+	/* pas d'espace entre les cellules */
+	border-spacing:0;
+	
+	/* largeur, marges et centrage horizontal */
+	width: 700px;
+	margin: 30px auto 30px auto;
+	
+	/* arrière plan */
+	background-color: rgb(230,230,230);	
+}
+
+/* styles des tableaux ayant la propiété class="tableau" */
+.tableau{
+	/* bordure pour l'ensemble du tableau */
+	border:1px solid#0bc8e;
+	
+	/* coin arrondis */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	
+	/* ombre légère */
+	-moz-border-shadow: 1px 3 px 3px #ccc;
+	-webkit-border-shadow:1px 3 px 3px #ccc ;
+	box-shadow:1px 3 px 3px #ccc;
+	
+	
+}
+
+
+/* styles des cellules des tableaux ayant la priorité class="tableau" */
+
+
+
+
+
+
+
+
