@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TP 4.4 / Fenêtre modale</title>
+<style>
+html{
+height: 100%;
+}
+
+body {
+	font: 1em Verdana, Arial, Heltevica, sans-serif;
+	
+	/* fond avec un dégradé de couleur (blanc en haut et gris en bas */
+	background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(210, 210, 210));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(210, 210, 210)));
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(210, 210, 210));
+	}
+	
+	/* style de la division id="page" */
+	
+	div#page{
+	/* largeur, centrage avec des marges auto, padding nul, bordure noire, alignement gauche */
+	width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	border: #000 1px solid;
+	text-align:left;
+	
+	/* coins arrondis avec un rayon de 15 pixels */
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-khtml-border-radius: 15px;
+	border-radius: 15px;
+	
+	/* fond avec un dégradé de couleur (blanc en haut, gris léger en bas) */
+	background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(210, 210, 210));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(210, 210, 210)));
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(210, 210, 210));
+	}
+
+a.bouton, button{
+	font: 1em helvetica, sans-serif;
+	margin: 1em auto;
+	display: block;
+	width: 250px;
+	background: #ccc;
+	text-align:center;
+	text-decoration: none;
+	color: black;
+	padding: 5px 0 5px 0;
+	text-shadow: 0 1px 0 #fff;
+	border : 1px solid rbga(0,0,0,0.1);
+	
+	/* coins arrondis */
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-o-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	border-radius: 7px;
+	
+	background: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(210, 210, 210));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(210, 210, 210)));
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(210, 210, 210));
+	
+	-moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+	-o-bbox-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+	}
+	
+/* ------------- styles lies au systeme d'affichage de messages ---------- */
+
+/* mise en forme de la boite d'affichage du message */
+.classe_messgae > div {
+	width: 500px;
+	background: #fff;
+	position : relative;
+	margin: 10% auto;
+	padding: 30px;
+	text-shadow: 0 1px 0 #fff;
+}
+</style>
+<script>
+
+</script>
+</head>
+<body>
+	<div id="page">
+		<p><a id="lien" href="#affichage_message" class="bouton">Ouvrir la fenêtre de message</a>
+		<p><button id="btnInformation"> Afficher une information</button>
+		<p><button id="btnAvertissement"> Afficher une avertissement</button>
+		</div>
+		
+	<aside id="affichage_message" class="classe_message">
+		<div>
+		<h2 id="titre_message" class="classe_information">Message</h2>
+		<p id="texte_message" class="classe_texte_message">Voici le texte du message<br>sur 2 lignes...</p>
+		<a href="#close" title="Fermer">Fermer</a>
+		</div>
+	</aside>
+</body>
+</html>
