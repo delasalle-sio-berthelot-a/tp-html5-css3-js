@@ -20,6 +20,64 @@
 		/* bordure noire sous le titre */
 		border-bottom: 1px solid #333;
 		}
+		
+		#menu > ul{
+		position: relative;
+		margin:0;
+		padding: 0;
+		list-style: none;
+		}
+		
+		#menu >ul > li{
+		height : 20px;
+		margin: 0 0 20px 0;
+		}
+		
+		#menu > ul > li:last-child{
+		/* suprime la marge du bas du dernier élément <li> */
+		margin: 0;
+		}
+		
+		#menu > ul > li a.lien{
+		position: absolute;
+		z-index:100;
+		display: block;
+		text-decoration: none;
+		color: black;
+		}
+		
+		#menu > ul > li > div{
+		position: absolute;
+		z-index:100;
+		left: 30px;
+		top:0;
+		width: 200px;
+		height : 180px;
+		border : 1px solid #fff;
+		color:white;
+		background-color: black;
+		padding: 15px;
+		
+		/* la division est transparente au départ */
+		opacity: 0;
+		
+		-moz-transition: all 1s ease-in;
+		-webkit-transition: all 1s ease-in;
+		-o-transition: all 1s ease-in;
+		transition: all 1s ease-in;
+		}
+		
+		#menu > ul > li >div >h3{
+		padding-bottom: 10px;
+		/* bordure blanche sous le titre */
+		border-bottom: 1px solid #fff;
+		}
+		
+		#menu > ul > li:hover >div {
+		/* survol du lien : la div se déplace à droite et apparâit progressivement */
+		left: 150px;
+		opacity:1;
+		}
 </style>
 </head>
 <body>
